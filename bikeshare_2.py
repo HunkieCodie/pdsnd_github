@@ -193,10 +193,7 @@ def trip_duration_stats(df):
           format(str(total_travel_time), str(converted_time)))
 
     # display mean travel time
-    average_travel_time = df['Trip Duration'].mean()
-
-    # support type for timedelta seconds component
-    mean_travel_time = average_travel_time.astype('float64', copy=False)
+    mean_travel_time = df['Trip Duration'].mean()
 
     # convert time to timedelta object
     mean_converted_time = datetime.timedelta(seconds=mean_travel_time)
