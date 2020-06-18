@@ -1,7 +1,9 @@
+# Importing required libraries
 import time
 import pandas as pd
 import datetime
 
+# City data dictionary
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
@@ -15,6 +17,7 @@ month_dict = {'jan': 'January', 'feb': 'February', 'mar': 'March', 'apr': 'April
               'all': 'No filters'}
 
 
+# Function to confirm a user's input
 def confirm_input():
     while True:
         answer = str(input("Please confirm your input\nEnter 'y' to continue or 'n' to restart:\n").strip().lower())
@@ -27,6 +30,7 @@ def confirm_input():
             get_filters()
 
 
+# Function to filter data by user's input
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -205,8 +209,13 @@ def trip_duration_stats(df):
 
 
 def user_stats(df, city):
-    """Displays statistics on bikeshare users."""
+    """
+    Displays statistics on bikeshare users.
 
+    Args:
+        df - Pandas DataFrame containing city data filtered by month and day
+        (str) city - name of the city to analyze
+    """
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
