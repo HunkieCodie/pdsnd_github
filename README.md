@@ -8,8 +8,12 @@ Exploring US Bikeshare Data
 In this project, I wrote Python code to import US bike share data and answer interesting questions about it by computing descriptive statistics. You will also write a script that takes in raw input to create an interactive experience in the terminal to present these statistics.
 
 ### Files used
-Include the files used
+In this project, dataset from https://www.motivateco.com/ was used.
+Randomly selected data for the first six months of 2017 were provided for the cities of Chicago, New York City and Washington:
+ - chicago.csv
+ - new_york_city.csv 
+ - washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacitys' Programming for Data Science Nanodegree 
 
